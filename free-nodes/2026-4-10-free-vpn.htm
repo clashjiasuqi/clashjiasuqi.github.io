@@ -326,19 +326,29 @@ opkg install curl wget coreutils
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 是否支持系统代理？</h5></div>
-    <div class="panel-body">
-        Netch 不直接修改系统代理，而是通过虚拟网卡（TAP 驱动）实现透明代理。这种方式不会影响浏览器设置，适合游戏和应用程序需要 UDP 支持的场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的分流规则如何优化视频播放？</h5></div>
     <div class="panel-body">
         通过分流规则，将流媒体域名匹配到高速节点，而其他流量走备用节点。保证视频播放流畅，同时节约带宽资源，提升整体网络速度和体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 的节点测速结果会自动更新吗？</h5></div>
+    <div class="panel-body">
+        PassWall2 可设置定期自动测速节点，更新延迟和可用性。结合策略组自动选择最优节点，可确保用户使用网络时始终连接到速度最快、最稳定的节点。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 支持手动和二维码导入节点吗？</h5></div>
     <div class="panel-body">
         支持。用户可以手动添加节点信息，或者通过扫描节点二维码导入节点。虽然不支持自动订阅更新，但足够满足轻量用户对节点管理和分流的需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式如何应用？</h5></div>
+    <div class="panel-body">
+        PAC 模式根据规则自动判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站环境，提高网络访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否支持订阅更新？</h5></div>
+    <div class="panel-body">
+        Potatso Lite 支持通过订阅链接更新节点。用户在设置中输入 URL 后，应用会定期拉取最新配置文件，实现自动更新节点信息。这让日常使用更加便捷和稳定。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 的节点订阅更新是否可定时执行？</h5></div>
@@ -351,24 +361,14 @@ opkg install curl wget coreutils
         ACL4SSR 是第三方规则集合，专注于分流国内外网站。Rule Provider 是 Clash 的订阅机制，允许自动更新远程规则。二者可以结合使用，实现灵活分流管理。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持订阅更新？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 支持通过订阅链接更新节点。用户在设置中输入 URL 后，应用会定期拉取最新配置文件，实现自动更新节点信息。这让日常使用更加便捷和稳定。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 的节点测速结果会自动更新吗？</h5></div>
-    <div class="panel-body">
-        PassWall2 可设置定期自动测速节点，更新延迟和可用性。结合策略组自动选择最优节点，可确保用户使用网络时始终连接到速度最快、最稳定的节点。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件如何应对封锁？</h5></div>
     <div class="panel-body">
         协议插件可隐藏真实通信特征，将流量伪装成正常 HTTP 或 TLS 数据。结合混淆方式使用，可以有效降低被 DPI 检测或封锁的风险，提高节点稳定性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式如何应用？</h5></div>
+    <div class="panel-heading"><h5>Netch 是否支持系统代理？</h5></div>
     <div class="panel-body">
-        PAC 模式根据规则自动判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站环境，提高网络访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
+        Netch 不直接修改系统代理，而是通过虚拟网卡（TAP 驱动）实现透明代理。这种方式不会影响浏览器设置，适合游戏和应用程序需要 UDP 支持的场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的路由规则如何实现国内直连？</h5></div>
@@ -402,16 +402,16 @@ opkg install curl wget coreutils
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-27-node-share.htm" title="Clash加速器 | 3月27日19.8M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月27日19.8M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-14-free-vpn-node.htm" title="Clash加速器 | 3月14日20.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月14日20.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-20-node-share-links.htm" title="Clash加速器 | 3月20日20.1M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月20日20.1M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-25-vpn-proxy.htm" title="Clash加速器 | 3月25日20.3M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月25日20.3M/S|免费Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-10-mianfei-vpn.htm" title="Clash加速器 | 3月10日18.2M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月10日18.2M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-node-share.htm" title="Clash加速器 | 4月12日23M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 4月12日23M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-21-top-vpn-node.htm" title="Clash加速器 | 3月21日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月21日20.1M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-11-node-share-links.htm" title="Clash加速器 | 3月11日20.4M/S|免费Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月11日20.4M/S|免费Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-30-free-node-subscribe-links.htm" title="Clash加速器 | 3月30日19M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月30日19M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-19-share-vpn.htm" title="Clash加速器 | 3月19日20.9M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月19日20.9M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-22-vpn-node.htm" title="Clash加速器 | 3月22日19.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月22日19.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-16-free-node-subscribe-links.htm" title="Clash加速器 | 3月16日20.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月16日20.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-4-free-node-subscribe-links.htm" title="Clash加速器 | 3月4日20.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月4日20.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-9-free-node-subscribe-links.htm" title="Clash加速器 | 4月9日19.4M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 4月9日19.4M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-node-share.htm" title="Clash加速器 | 4月16日18.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 4月16日18.2M/S|免费Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-7-free-vpn.htm" title="Clash加速器 | 3月7日20.6M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 3月7日20.6M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-2-vpn-github.htm" title="Clash加速器 | 4月2日20.6M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 4月2日20.6M/S|免费Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-10-free-vpn.htm" title="Clash加速器 | 4月10日21.8M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Clash加速器 | 4月10日21.8M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -423,7 +423,7 @@ opkg install curl wget coreutils
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">5</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
